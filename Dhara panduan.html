@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHARAARTHA – Panduan Penggunaan POC Sawit Tandan Mas</title>
+  <meta name="description" content="Panduan resmi takaran dosis, cara pengkocoran, dan interval aplikasi Pupuk Organik Cair (POC) Sawit Dharaartha Tandan Mas serta Pestisida Nabati Sawit.">
+  <link rel="icon" type="image/png" href="Logo.png">
+  <style>
+    :root {
+      --green-dark: #0b3b24;
+      --green-mid: #14532d;
+      --green-leaf: #1f7a44;
+      --green-soft: #ecfdf3;
+      --gold: #d4af37;
+      --gold-light: #fef9c3;
+      --gold-dark: #9a7b1c;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --bg-body: #f8faf9;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(11, 59, 36, 0.1), 0 4px 10px -2px rgba(11, 59, 36, 0.05);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    /* Sticky Top Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    .nav-container {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand-logo img {
+      height: 124px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--green-dark);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    /* Hero Section dengan Background Perkebunan Sawit */
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(160deg, rgba(11, 59, 36, 0.90) 0%, rgba(15, 76, 46, 0.84) 55%, rgba(11, 59, 36, 0.92) 100%),
+        url('Etalase DharaArtha (12).png') center center / cover no-repeat;
+      color: var(--white);
+      padding: 48px 20px 56px;
+      text-align: center;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .hero-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.2);
+      border: 1px solid var(--gold);
+      color: #fde68a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+      display: block;
+      margin-top: 4px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #e2e8f0;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #e5c158 0%, #c59b27 100%);
+      color: #092c1b;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+    }
+
+    /* Main Content Container */
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 16px 60px;
+    }
+
+    .section {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--green-soft);
+    }
+
+    .section-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--green-dark);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--green-dark);
+      line-height: 1.25;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Product Showcase Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    @media (min-width: 680px) {
+      .product-grid {
+        grid-template-columns: 1fr 1.2fr;
+      }
+      .section {
+        padding: 32px 28px;
+      }
+    }
+
+    .product-img-wrap {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .product-caption {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    .spec-list {
+      list-style: none;
+      margin-top: 14px;
+    }
+
+    .spec-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 15px;
+    }
+
+    .spec-list li:last-child {
+      border-bottom: none;
+    }
+
+    .spec-label {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .spec-val {
+      font-weight: 700;
+      color: var(--green-dark);
+      text-align: right;
+    }
+
+    /* Dosage Cards */
+    .dosage-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .dosage-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .d-card {
+      border: 1.5px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 18px;
+      background: #ffffff;
+    }
+
+    .d-card.highlight {
+      border-color: var(--gold);
+      background: linear-gradient(180deg, #fffbeb 0%, #ffffff 100%);
+    }
+
+    .d-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+
+    .d-card.highlight .d-tag {
+      background: var(--gold);
+      color: #092c1b;
+    }
+
+    .d-value {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 4px;
+    }
+
+    .d-sub {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--green-leaf);
+      margin-bottom: 8px;
+    }
+
+    .d-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Table Responsive */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 480px;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--green-dark);
+      color: var(--white);
+      text-align: left;
+      padding: 12px 14px;
+      font-weight: 700;
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    /* Kemasan Coverage Grid */
+    .pack-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .pack-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .pack-box {
+      background: var(--green-soft);
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .pack-box h4 {
+      color: var(--green-dark);
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .pack-box p {
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    /* Interactive Calculator */
+    .calc-box {
+      background: #f1f5f9;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 20px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .calc-title {
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .calc-controls {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 600px) {
+      .calc-controls {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .calc-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text-main);
+    }
+
+    .calc-group input,
+    .calc-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #94a3b8;
+      font-size: 15px;
+      font-weight: 600;
+      background: var(--white);
+    }
+
+    .calc-result {
+      margin-top: 14px;
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 14px 16px;
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .calc-res-item span {
+      display: block;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .calc-res-item strong {
+      font-size: 18px;
+      color: var(--gold);
+    }
+
+    /* Steps List */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: #f8fafc;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .step-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--green-dark);
+      color: var(--gold);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 15px;
+    }
+
+    .step-content h4 {
+      color: var(--green-dark);
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+    }
+
+    /* Alert / Warning Box */
+    .alert-box {
+      background: #fffbeb;
+      border-left: 4px solid #d97706;
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #78350f;
+    }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .checklist li {
+      padding-left: 26px;
+      position: relative;
+      font-size: 15px;
+    }
+
+    .checklist li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--green-leaf);
+      font-weight: 800;
+    }
+
+    .warn-list li::before {
+      content: "⚠";
+      color: #d97706;
+    }
+
+    /* FAQ Accordion */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      width: 100%;
+      background: #f8fafc;
+      border: none;
+      text-align: left;
+      padding: 15px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--green-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+    }
+
+    .faq-a {
+      display: none;
+      padding: 14px 18px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      background: var(--white);
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-item.active .faq-a {
+      display: block;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* CTA WhatsApp Section */
+    .cta-box {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+      color: var(--white);
+      text-align: center;
+      border-radius: var(--radius);
+      padding: 32px 20px;
+      border: 2px solid var(--gold);
+    }
+
+    .cta-box h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .cta-box p {
+      color: #e2e8f0;
+      font-size: 15px;
+      margin-bottom: 20px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #062c15;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Floating Buttons */
+    .floating-wa {
+      position: fixed;
+      bottom: 20px;
+      right: 18px;
+      background: #25d366;
+      color: #062c15;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .back-top {
+      position: fixed;
+      bottom: 20px;
+      left: 18px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--green-dark);
+      color: var(--gold);
+      border: 1.5px solid var(--gold);
+      font-size: 18px;
+      font-weight: 800;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px 80px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    footer img {
+      height: 124px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Navigasi Atas -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#top" class="brand-logo">
+        <img src="Logo.png" alt="Logo DharaArtha">
+      </a>
+      <div class="nav-links">
+        <a href="#produk">Produk</a>
+        <a href="#dosis">Dosis & Takaran</a>
+        <a href="#langkah">Cara Pakai</a>
+        <a href="#perawatan">Perawatan Hama</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Halaman Pembuka (Hero Section) -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Panduan Digital Resmi Petani Sawit</div>
+      <h1>
+        DHARAARTHA
+        <span>PANDUAN PENGGUNAAN POC SAWIT</span>
+      </h1>
+      <p>Panduan praktis penggunaan untuk membantu perawatan dan pemenuhan nutrisi tanaman kelapa sawit secara tepat takaran dan efektif di lapangan.</p>
+      <div class="hero-actions">
+        <a href="#dosis" class="btn-primary">Mulai Panduan Dosis</a>
+        <a href="#langkah" class="btn-secondary">Cara Pengkocoran</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- B. Mengenal Produk POC Sawit Tandan Mas -->
+    <section class="section" id="produk">
+      <div class="section-header">
+        <div class="section-icon">🌴</div>
+        <div>
+          <h2 class="section-title">Mengenal POC Sawit DharaArtha (Tandan Mas)</h2>
+          <p class="section-subtitle">Formula nutrisi organik cair & ZPT khusus perkebunan kelapa sawit</p>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-img-wrap">
+          <img src="produk sawit.jpg" alt="Varian Kemasan POC Sawit DharaArtha Tandan Mas 500 ml, 1 Liter, dan 5 Liter">
+          <p class="product-caption">Tersedia Kemasan 500 ml, 1.000 ml (1L), dan Jerigen 5.000 ml (5L)</p>
+        </div>
+        <div>
+          <p><strong>DharaArtha POC Sawit (Tandan Mas)</strong> adalah Pupuk Organik Cair (POC) yang dilengkapi Zat Pengatur Tumbuh (ZPT) dan mikroorganisme bermanfaat untuk membantu mencukupi kebutuhan nutrisi tanaman kelapa sawit, menjaga kesehatan akar, serta mendukung pembentukan tandan buah.</p>
+          <ul class="spec-list">
+            <li><span class="spec-label">Nama Produk</span><span class="spec-val" id="cfg-product-name">DharaArtha POC Sawit (Tandan Mas)</span></li>
+            <li><span class="spec-label">Kategori</span><span class="spec-val">Pupuk Organik Cair (POC) & ZPT</span></li>
+            <li><span class="spec-label">Varian Kemasan</span><span class="spec-val">500 ml, 1 Liter, Jerigen 5 Liter</span></li>
+            <li><span class="spec-label">Metode Aplikasi</span><span class="spec-val">Pengkocoran / Penyiraman Piringan</span></li>
+            <li><span class="spec-label">Interval Anjuran</span><span class="spec-val" id="cfg-interval">1 – 2 Minggu Sekali</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. Panduan Dosis & Konversi Penggunaan -->
+    <section class="section" id="dosis">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <div>
+          <h2 class="section-title">Panduan Dosis & Konversi Takaran</h2>
+          <p class="section-subtitle">Dosis standar 10 – 20 ml per 1 liter air bersih (setara 2 – 3 tutup botol)</p>
+        </div>
+      </div>
+
+      <div class="dosage-cards">
+        <div class="d-card">
+          <span class="d-tag">PERAWATAN RUTIN</span>
+          <div class="d-value" id="cfg-dose-routine">10 ml / Liter Air</div>
+          <div class="d-sub">Setara ± 2 tutup botol per liter air</div>
+          <p class="d-desc">Cocok untuk tanaman kelapa sawit yang sudah berbuah normal untuk menjaga kestabilan bobot tandan dan mencegah fase trek.</p>
+        </div>
+        <div class="d-card highlight">
+          <span class="d-tag">PEMULIHAN / BOOSTER MAKSIMAL</span>
+          <div class="d-value" id="cfg-dose-booster">15 – 20 ml / Liter Air</div>
+          <div class="d-sub">Setara ± 2,5 – 3 tutup botol per liter air</div>
+          <p class="d-desc">Direkomendasikan untuk sawit yang sedang trek/buah menurun, daun menguning, atau baru memasuki fase generatif (pembungaan).</p>
+        </div>
+      </div>
+
+      <p style="font-size:14.5px; margin-bottom:14px;"><strong>Kebutuhan Larutan per Pohon:</strong> Standar kebutuhan larutan jadi (air + POC) untuk <strong>1 pohon sawit dewasa adalah 1 – 2 liter larutan</strong> per sekali aplikasi, disesuaikan dengan umur pohon dan kelembapan tanah.</p>
+
+      <h3 style="font-size:16px; color:var(--green-dark); margin-top:18px;">A. Konversi Takaran per Wadah / Tangki Penyiraman</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Wadah / Alat</th>
+              <th>Volume Air</th>
+              <th>Takaran POC DharaArtha</th>
+              <th>Cakupan Pohon Sawit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1 Ember / Gembor Kecil</strong></td>
+              <td>10 Liter</td>
+              <td>100 – 200 ml (10–20 tutup)</td>
+              <td><strong>5 – 10 pohon</strong></td>
+            </tr>
+            <tr>
+              <td><strong>1 Tangki Sprayer / Jerigen</strong></td>
+              <td>15 Liter</td>
+              <td>150 – 300 ml (15–30 tutup)</td>
+              <td><strong>7 – 15 pohon</strong></td>
+            </tr>
+            <tr>
+              <td><strong>1 Jerigen Besar</strong></td>
+              <td>20 Liter</td>
+              <td>200 – 400 ml (20–40 tutup)</td>
+              <td><strong>10 – 20 pohon</strong></td>
+            </tr>
+            <tr>
+              <td><strong>1 Drum Sedang</strong></td>
+              <td>100 Liter</td>
+              <td>1.000 – 2.000 ml (1 – 2 Liter)</td>
+              <td><strong>50 – 100 pohon</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:16px; color:var(--green-dark); margin-top:20px;">B. Cakupan Jumlah Pohon per Kemasan Botol</h3>
+      <div class="pack-grid">
+        <div class="pack-box">
+          <h4>Kemasan 500 ml</h4>
+          <p>• Menghasilkan <strong>25 – 50 liter</strong> larutan siap pakai.<br>• Cukup untuk <strong>12 – 50 pohon sawit</strong> (rata-rata optimal <strong>25 pohon</strong>).</p>
+        </div>
+        <div class="pack-box">
+          <h4>Kemasan 1 Liter (1.000 ml)</h4>
+          <p>• Menghasilkan <strong>50 – 100 liter</strong> larutan siap pakai.<br>• Cukup untuk <strong>25 – 100 pohon sawit</strong> (rata-rata optimal <strong>50 pohon</strong>).</p>
+        </div>
+        <div class="pack-box" style="border-color: var(--gold); background: #fffbeb;">
+          <h4>Jerigen 5 Liter (5.000 ml)</h4>
+          <p>• Menghasilkan <strong>250 – 500 liter</strong> larutan siap pakai.<br>• Cukup untuk <strong>125 – 500 pohon sawit</strong> (optimal <strong>250 pohon</strong> / ± 1,5–2 Ha).</p>
+        </div>
+      </div>
+
+      <!-- Kalkulator Takaran Praktis -->
+      <div class="calc-box">
+        <div class="calc-title">🧮 Kalkulator Takaran Otomatis (Hitung Kebutuhan Kebun Anda)</div>
+        <div class="calc-controls">
+          <div class="calc-group">
+            <label for="calc-trees">Jumlah Pohon Sawit yang Akan Dipupuk:</label>
+            <input type="number" id="calc-trees" value="50" min="1" max="10000">
+          </div>
+          <div class="calc-group">
+            <label for="calc-mode">Pilih Tujuan Aplikasi:</label>
+            <select id="calc-mode">
+              <option value="10">Perawatan Rutin (10 ml / liter air)</option>
+              <option value="20">Pemulihan Trek / Booster (20 ml / liter air)</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="calc-res-item">
+            <span>Kebutuhan Air Bersih (1,5 L/pohon)</span>
+            <strong id="res-water">75 Liter</strong>
+          </div>
+          <div class="calc-res-item">
+            <span>Kebutuhan POC Tandan Mas</span>
+            <strong id="res-poc">750 ml (0,75 L)</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. Langkah-Langkah Aplikasi -->
+    <section class="section" id="langkah">
+      <div class="section-header">
+        <div class="section-icon">🚿</div>
+        <div>
+          <h2 class="section-title">Langkah-Langkah Aplikasi Pengkocoran</h2>
+          <p class="section-subtitle">Ikuti 5 tahapan berurutan agar nutrisi terserap optimal oleh akar serabut</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Persiapkan Produk & Air Bersih</h4>
+            <p>Siapkan jerigen POC Sawit DharaArtha, ember/gembor/tangki kocor, dan <strong>air bersih</strong> (air sumur, air sungai bersih, atau air hujan). Hindari air berkaporit tinggi atau berlumpur pekat.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Kocok Botol & Ukur Dosis</h4>
+            <p>Kocok jerigen terlebih dahulu sebelum dituang agar endapan nutrisi organik dan ZPT tercampur merata. Takar <strong>10 – 20 ml (2 – 3 tutup botol)</strong> untuk setiap 1 liter air.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Lakukan Pengenceran di Wadah</h4>
+            <p>Tuangkan POC sesuai takaran wadah (misal 150–300 ml untuk tangki 15 liter), lalu aduk hingga larutan tercampur homogen.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Kocorkan Melingkar di Area Piringan</h4>
+            <p>Bersihkan piringan dari gulma tebal. Siramkan <strong>1 – 2 liter larutan</strong> secara melingkar pada radius <strong>0,5 – 1,5 meter</strong> dari pangkal batang (area aktif akar makan). Jika memakai tangki sprayer, lepas <em>nozzle</em> (spuyer) agar aliran keluar deras.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Perawatan & Evaluasi Berkala</h4>
+            <p>Catat tanggal pemupukan dan ulangi secara rutin setiap <strong>1 – 2 minggu sekali</strong> sambil mengamati kesegaran pelepah daun serta perkembangan bakal tandan buah.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Waktu, Frekuensi & Rekomendasi Perawatan Hama (Pesnab Sawit) -->
+    <section class="section" id="perawatan">
+      <div class="section-header">
+        <div class="section-icon">🛡️</div>
+        <div>
+          <h2 class="section-title">Jadwal Aplikasi & Paket Perawatan Terpadu</h2>
+          <p class="section-subtitle">Waktu terbaik aplikasi POC dan perlindungan dari hama perkebunan sawit</p>
+        </div>
+      </div>
+
+      <ul class="checklist">
+        <li><strong>Interval 1 Minggu Sekali:</strong> Direkomendasikan untuk masa pemulihan sawit stres/trek atau pembesaran tandan secara intensif.</li>
+        <li><strong>Interval 2 Minggu Sekali:</strong> Direkomendasikan untuk perawatan rutin jangka panjang agar produksi buah stabil sepanjang tahun.</li>
+        <li><strong>Waktu Penyiraman Terbaik:</strong> Pagi hari (<strong>pukul 06.00 – 10.00</strong>) atau sore hari (<strong>pukul 15.00 – 18.00</strong>) saat suhu tanah sejuk dan tidak terik.</li>
+        <li><strong>Kondisi Cuaca:</strong> Hindari aplikasi tepat saat hujan deras agar larutan pupuk tidak hanyut terbawa aliran air permukaan.</li>
+      </ul>
+
+      <div class="alert-box">
+        <strong>Catatan Penting Jeda Kimia:</strong> Beri jeda minimal <strong>5 – 7 hari</strong> apabila lahan baru saja disemprot herbisida atau diberi pupuk kimia dosis tinggi agar mikroorganisme baik di dalam POC tetap hidup optimal.
+      </div>
+
+      <!-- Produk Pendamping: Pesnab Sawit DharaArtha -->
+      <div style="margin-top: 26px; padding-top: 22px; border-top: 2px dashed var(--border);">
+        <h3 style="font-size: 18px; color: var(--green-dark); margin-bottom: 12px;">Rekomendasi Perawatan Perlindungan Tanaman: Pesnab Sawit DharaArtha</h3>
+        <div class="product-grid">
+          <div class="product-img-wrap">
+            <img src="Produk Pesnab sawit.jpg" alt="Pestisida Nabati Sawit DharaArtha Bio Terminator 500 ml, 1 Liter, dan 5 Liter">
+            <p class="product-caption">DharaArtha Pestisida Sawit (Formula Bio-Terminator Botani 100% Organik)</p>
+          </div>
+          <div>
+            <p style="margin-bottom: 10px;">Selain pemenuhan nutrisi melalui <strong>POC Sawit Tandan Mas</strong>, pastikan tanaman sawit terlindungi dari serangan hama pengganggu seperti kumbang tanduk (<em>Oryctes</em>), ulat api, ulat kantong, dan penggerek buah.</p>
+            <p style="margin-bottom: 12px;">Gunakan <strong>DharaArtha Pestisida Sawit (Pesnab)</strong> berbahan aktif nabati sebagai perawatan perlindungan kebun secara organik dan ramah lingkungan.</p>
+            <div style="background: var(--green-soft); padding: 12px 14px; border-radius: 10px; font-size: 14px; color: var(--green-dark);">
+              <strong>Tips Kombinasi:</strong> Aplikasikan POC Tandan Mas pada area akar (piringan), dan semprotkan Pesnab Sawit secara terpisah pada bagian tajuk/pucuk sesuai petunjuk label kemasan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F & G. Tips Penggunaan & Hal yang Perlu Diperhatikan -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚠️</div>
+        <div>
+          <h2 class="section-title">Tips Penggunaan & Keselamatan</h2>
+          <p class="section-subtitle">Panduan penyimpanan dan keamanan penggunaan di lapangan</p>
+        </div>
+      </div>
+
+      <ul class="checklist warn-list">
+        <li><strong>Ikuti Takaran Anjuran:</strong> Gunakan gelas ukur atau tutup botol kemasan agar dosis tetap konsisten (10–20 ml/liter air).</li>
+        <li><strong>Jangan Dicampur Sembarangan:</strong> Hindari mencampur POC secara langsung dalam satu tangki dengan fungisida/bakterisida kimia atau herbisida.</li>
+        <li><strong>Penyimpanan Produk:</strong> Tutup rapat kembali segel tutup jerigen setelah digunakan. Simpan di tempat teduh, sejuk, dan terhindar dari sinar matahari langsung.</li>
+        <li><strong>Keamanan Pengguna:</strong> Gunakan sarung tangan dan masker saat meracik. Hindari kontak langsung dengan mata dan mulut, serta jauhkan dari jangkauan anak-anak.</li>
+      </ul>
+    </section>
+
+    <!-- H. Pertanyaan Umum (FAQ) -->
+    <section class="section" id="faq">
+      <div class="section-header">
+        <div class="section-icon">❓</div>
+        <div>
+          <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+          <p class="section-subtitle">Ketuk pertanyaan di bawah untuk melihat jawaban</p>
+        </div>
+      </div>
+
+      <div class="faq-item active">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>1. Berapa dosis POC Sawit Tandan Mas per pohon?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Campurkan <strong>10 – 20 ml POC (setara 2 – 3 tutup botol)</strong> per 1 liter air bersih. Kemudian siramkan atau kocorkan sebanyak <strong>1 – 2 liter larutan jadi per pohon</strong> di area piringan sawit.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>2. Apakah POC Sawit ini wajib dicampur air terlebih dahulu?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Ya, wajib diencerkan dengan air bersih (air sumur, air hujan, atau air sungai bersih) sesuai takaran sebelum dikocorkan ke tanah agar larutan mudah meresap ke zona perakaran aktif.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>3. Satu jerigen 5 liter bisa untuk berapa pohon sawit?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Kemasan jerigen 5 liter (5.000 ml) menghasilkan <strong>250 – 500 liter larutan siap pakai</strong>, cukup untuk <strong>125 – 500 pohon sawit</strong> (rata-rata optimal <strong>250 pohon</strong> atau sekitar 1,5 – 2 hektar lahan sawit).
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>4. Apakah bisa digunakan untuk tanaman sawit muda (TBM)?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Bisa. Gunakan dosis perawatan rutin <strong>10 ml per liter air</strong>, dan sesuaikan volume siraman menjadi sekitar <strong>0,5 – 1 liter larutan per pohon</strong> pada radius 30 – 50 cm dari pangkal batang.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>5. Kapan waktu aplikasi yang paling tepat?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Lakukan pada pagi hari (pukul 06.00 – 10.00) atau sore hari (pukul 15.00 – 18.00) dengan interval rutin <strong>1 – 2 minggu sekali</strong>.
+        </div>
+      </div>
+    </section>
+
+    <!-- I. Hubungi DharaArtha -->
+    <section class="cta-box" id="kontak">
+      <h3>Butuh Konsultasi Dosis Kebun Sawit Anda?</h3>
+      <p>Tim teknis DharaArtha siap membantu menghitung kebutuhan pupuk dan cara perawatan terbaik sesuai kondisi lahan sawit Anda.</p>
+      <a href="#" id="btn-wa-main" target="_blank" rel="noopener" class="btn-wa">
+        <span>💬 Konsultasi via WhatsApp Resmi</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Tombol WhatsApp Melayang & Kembali ke Atas -->
+  <a href="#" id="btn-wa-float" target="_blank" rel="noopener" class="floating-wa">
+    <span>💬 Tanya Admin</span>
+  </a>
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Kembali ke atas">↑</button>
+
+  <footer>
+    <img src="Logo.png" alt="Logo DharaArtha">
+    <p><strong>DHARAARTHA</strong> – Solusi Pertanian Organik & Kemakmuran Tani</p>
+    <p style="margin-top:4px;">Panduan Digital Resmi Produk POC Sawit Tandan Mas & Pesnab Sawit</p>
+  </footer>
+
+  <!-- KONFIGURASI TERPUSAT (MUDAH DIEDIT) -->
+  <script>
+    const CONFIG = {
+      productName: "DharaArtha POC Sawit (Tandan Mas)",
+      routineDosage: "10 ml / Liter Air",
+      boosterDosage: "15 – 20 ml / Liter Air",
+      interval: "1 – 2 Minggu Sekali",
+      whatsappNumber: "6288985454407", // Ubah nomor WA di sini (format 62...)
+      whatsappMessage: "Halo Admin DharaArtha, saya baru memindai QR Code pada kemasan POC Sawit Tandan Mas dan ingin konsultasi cara penggunaannya."
+    };
+
+    // Terapkan konfigurasi ke halaman
+    document.getElementById("cfg-product-name").textContent = CONFIG.productName;
+    document.getElementById("cfg-dose-routine").textContent = CONFIG.routineDosage;
+    document.getElementById("cfg-dose-booster").textContent = CONFIG.boosterDosage;
+    document.getElementById("cfg-interval").textContent = CONFIG.interval;
+
+    const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
+    document.getElementById("btn-wa-main").href = waUrl;
+    document.getElementById("btn-wa-float").href = waUrl;
+
+    // Kalkulator Takaran Otomatis
+    const inputTrees = document.getElementById("calc-trees");
+    const selectMode = document.getElementById("calc-mode");
+    const resWater = document.getElementById("res-water");
+    const resPoc = document.getElementById("res-poc");
+
+    function updateCalculator() {
+      const trees = Math.max(1, parseInt(inputTrees.value) || 0);
+      const dosePerLiter = parseInt(selectMode.value) || 10;
+      const totalWater = trees * 1.5; // Rata-rata 1,5 liter larutan per pohon
+      const totalPocMl = totalWater * dosePerLiter;
+
+      resWater.textContent = `${totalWater.toLocaleString("id-ID")} Liter`;
+      if (totalPocMl >= 1000) {
+        resPoc.textContent = `${totalPocMl.toLocaleString("id-ID")} ml (${(totalPocMl / 1000).toLocaleString("id-ID")} L)`;
+      } else {
+        resPoc.textContent = `${totalPocMl.toLocaleString("id-ID")} ml`;
+      }
+    }
+
+    inputTrees.addEventListener("input", updateCalculator);
+    selectMode.addEventListener("change", updateCalculator);
+    updateCalculator();
+
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      item.classList.toggle("active");
+    }
+
+    // Tombol Kembali ke Atas
+    const backTopBtn = document.getElementById("backTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 350) {
+        backTopBtn.style.display = "flex";
+      } else {
+        backTopBtn.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
