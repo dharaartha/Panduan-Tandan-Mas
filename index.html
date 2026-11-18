@@ -1055,7 +1055,150 @@
         </div>
       </div>
     </section>
+<!-- Bagian Katalog & Harga Spesial Direct Order -->
+<section class="section-card" id="harga-langsung" style="margin-top: 28px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:16px;">
+    <div>
+      <span style="display:inline-block; background:#e6f4ea; color:#137333; font-weight:700; font-size:12px; padding:4px 10px; border-radius:999px; margin-bottom:6px;">
+        🔥 PENAWARAN KHUSUS PEMBELIAN LANGSUNG
+      </span>
+      <h2 style="margin:0;">Varian Kemasan &amp; Harga Lebih Hemat di Luar Platform</h2>
+      <p style="margin:4px 0 0; color:#555;">
+        Order langsung via WhatsApp resmi untuk mendapatkan <strong>harga lebih murah</strong> dibanding harga platform, prioritas stok, dan pendampingan dosis.
+      </p>
+    </div>
+  </div>
 
+  <!-- Filter 3 Produk Sesuai Foto Etalase -->
+  <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+    <button type="button" class="catalog-tab active-tab" data-product="Tandan Mas (Sawit)" onclick="selectCatalogProduct(this, 'Tandan Mas - Formula Nutrisi Pohon Sawit')">
+      🌴 Tandan Mas (Sawit)
+    </button>
+    <button type="button" class="catalog-tab" data-product="Pestisida Sawit" onclick="selectCatalogProduct(this, 'Pestisida Sawit - Bio-Terminator 100% Organik')">
+      🛡️ Pestisida Sawit
+    </button>
+    <button type="button" class="catalog-tab" data-product="Agrapana (Padi)" onclick="selectCatalogProduct(this, 'Agrapana - Formula Nutrisi Tanaman Padi')">
+      🌾 Agrapana (Padi)
+    </button>
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; align-items:start;">
+    <!-- Kolom Gambar Etalase -->
+    <div style="background:#f8faf9; border:1px solid #e2e8e4; border-radius:14px; padding:12px; text-align:center;">
+      <img id="catalog-img" src="Etalase DharaArtha (23).jpg" alt="Varian Kemasan DharaArtha" style="width:100%; max-height:360px; object-fit:contain; border-radius:10px;">
+      <p id="catalog-caption" style="font-size:13px; color:#444; margin:10px 0 0;">
+        <strong>Tandan Mas</strong> — Tersedia kemasan 500 ml, 1.000 ml, dan 5.000 ml dengan segel tutup kuat.
+      </p>
+    </div>
+
+    <!-- Kolom Daftar Harga & CTA Direct Order -->
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <div style="border:1px solid #dce6df; border-radius:12px; padding:14px; background:#fff;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <strong>Kemasan 500 ml</strong>
+          <span style="font-size:12px; background:#fef7e0; color:#b06000; padding:2px 8px; border-radius:6px; font-weight:600;">Hemat Direct Order</span>
+        </div>
+        <div style="margin-top:6px; font-size:14px; color:#777;">
+          Harga Acuan Etalase: <span style="text-decoration:line-through;">Rp55.000</span>
+        </div>
+        <div style="font-size:16px; font-weight:700; color:#137333; margin-top:2px;">
+          Lebih Murah via WA Resmi (Tanya Promo)
+        </div>
+        <a href="#" onclick="orderDirectWA('500 ml', 'Rp55.000'); return false;" style="display:inline-block; margin-top:10px; font-size:13px; font-weight:600; color:#0f5132; text-decoration:underline;">
+          Ambil Harga Khusus 500 ml →
+        </a>
+      </div>
+
+      <div style="border:1px solid #dce6df; border-radius:12px; padding:14px; background:#fff;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <strong>Kemasan 1.000 ml (1 Liter)</strong>
+          <span style="font-size:12px; background:#e6f4ea; color:#137333; padding:2px 8px; border-radius:6px; font-weight:600;">Paling Populer</span>
+        </div>
+        <div style="margin-top:6px; font-size:14px; color:#777;">
+          Harga Acuan Etalase: <span style="text-decoration:line-through;">Rp80.000</span>
+        </div>
+        <div style="font-size:16px; font-weight:700; color:#137333; margin-top:2px;">
+          Lebih Murah via WA Resmi + Potongan Grosir
+        </div>
+        <a href="#" onclick="orderDirectWA('1.000 ml (1 Liter)', 'Rp80.000'); return false;" style="display:inline-block; margin-top:10px; font-size:13px; font-weight:600; color:#0f5132; text-decoration:underline;">
+          Ambil Harga Khusus 1 Liter →
+        </a>
+      </div>
+
+      <div style="border:2px solid #198754; border-radius:12px; padding:14px; background:#f4fbf7;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <strong>Jerigen 5.000 ml (5 Liter)</strong>
+          <span style="font-size:12px; background:#198754; color:#fff; padding:2px 8px; border-radius:6px; font-weight:600;">Harga Kebun Terbaik</span>
+        </div>
+        <div style="margin-top:6px; font-size:14px; color:#666;">
+          Harga Acuan Etalase: <span style="text-decoration:line-through;">Rp250.000</span>
+        </div>
+        <div style="font-size:16px; font-weight:700; color:#0f5132; margin-top:2px;">
+          Harga Khusus Pembelian Langsung (Paling Hemat/Liter)
+        </div>
+        <a href="#" onclick="orderDirectWA('Jerigen 5.000 ml (5 Liter)', 'Rp250.000'); return false;" style="display:inline-block; margin-top:10px; padding:8px 14px; background:#198754; color:#fff; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none;">
+          Chat WA untuk Harga Jerigen Terbaik
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .catalog-tab {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #1e293b;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .catalog-tab.active-tab {
+    background: #198754;
+    color: #ffffff;
+    border-color: #198754;
+  }
+</style>
+
+<script>
+  const CATALOG_DATA = {
+    'Tandan Mas - Formula Nutrisi Pohon Sawit': {
+      img: 'Etalase DharaArtha (23).png',
+      caption: '<strong>Tandan Mas</strong> — Formula Nutrisi Pohon Sawit (500 ml: Rp55.000 | 1.000 ml: Rp80.000 | 5.000 ml: Rp250.000).'
+    },
+    'Pestisida Sawit - Bio-Terminator 100% Organik': {
+      img: 'Etalase DharaArtha (25).png',
+      caption: '<strong>Pestisida Sawit</strong> — Formula Bio-Terminator Botani 100% Organik (500 ml: Rp55.000 | 1.000 ml: Rp80.000 | 5.000 ml: Rp250.000).'
+    },
+    'Agrapana - Formula Nutrisi Tanaman Padi': {
+      img: 'Etalase DharaArtha (24).png',
+      caption: '<strong>Agrapana</strong> — Formula Nutrisi Tanaman Padi (500 ml: Rp55.000 | 1.000 ml: Rp80.000 | 5.000 ml: Rp250.000).'
+    }
+  };
+
+  let activeCatalogProduct = 'Tandan Mas - Formula Nutrisi Pohon Sawit';
+
+  function selectCatalogProduct(btn, productKey) {
+    document.querySelectorAll('.catalog-tab').forEach(el => el.classList.remove('active-tab'));
+    btn.classList.add('active-tab');
+    activeCatalogProduct = productKey;
+
+    const item = CATALOG_DATA[productKey];
+    if (item) {
+      document.getElementById('catalog-img').src = item.img;
+      document.getElementById('catalog-caption').innerHTML = item.caption;
+    }
+  }
+
+  function orderDirectWA(variantLabel, refPrice) {
+    const waNum = (typeof CONFIG !== 'undefined' && CONFIG.whatsappNumber) ? CONFIG.whatsappNumber : '6288985454407';
+    const text = `Halo Admin DharaArtha, saya ingin tanya harga khusus pembelian langsung (di luar platform) untuk *${activeCatalogProduct}* ukuran *${variantLabel}* (harga acuan ${refPrice}). Mohon info promo & ongkirnya.`;
+    const url = `https://wa.me/${waNum}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener');
+  }
+</script>
     <!-- I. Hubungi DharaArtha -->
     <section class="cta-box" id="kontak">
       <h3>Butuh Konsultasi Dosis Kebun Sawit Anda?</h3>
